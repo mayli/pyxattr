@@ -22,15 +22,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-12]
+        os: [ubuntu-22.04]
         python-version:
-          - '3.7'
-          - '3.8'
-          - '3.9'
-          - '3.10'
-          - 'pypy-3.7'
-          - 'pypy-3.8'
-          - 'pypy-3.9'
+          - '2.7'
       fail-fast: false
 
     steps:
